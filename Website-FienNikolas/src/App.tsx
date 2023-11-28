@@ -1,12 +1,13 @@
 import './App.css'
+import About from './Pages/About'
+import Home from './Pages/Home'
 
 function App() {
-
   return (
-    <>
-    <NavBar/>
-      <h1 className='text-red-500'>hallo</h1>
-    </>
+    <div className=''>
+      <Home/>
+      <About/>
+    </div>
   )
 }
 
