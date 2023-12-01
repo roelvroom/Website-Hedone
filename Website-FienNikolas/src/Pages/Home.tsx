@@ -40,7 +40,7 @@ const Home = () => {
                   spy={true}
                   smooth={true}
                   offset={50}
-                  duration={500}
+                  duration={1100}
                   className=' text-white text-lg hover:text-orange-300 duration-300 cursor-pointer nav-item'
                 >
                   {link.name}
