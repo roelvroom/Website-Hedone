@@ -3,7 +3,10 @@ import burger2 from '../assets/StockFotoBurger2.jpg'
 
 const About = () => {
   return (
-    <div id='About' className='grid grid-cols-2 gap-3 p-14'>
+    <div id='About'>
+      <h1 className='text-7xl py-12 ps-16'><span className='text-orange-400'>About</span> us</h1>
+      <span className="p-0.5 bg-orange-400 h-52 w-60 ms-16 text-4xl" ></span>
+      <div className='grid grid-cols-2 gap-3 p-14'>
       <section className='h-3/4'>
         <div className='bottom-3'>
           <img className='h-auto mb-2 rounded-xl' src={burger1} alt='burger' />
@@ -59,6 +62,8 @@ const About = () => {
         </div>
       </section>
     </div>
+    </div>
+    
   )
 }
 
