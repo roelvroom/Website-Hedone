@@ -1,38 +1,26 @@
 import { Link } from 'react-scroll'
-import Banner from '../assets/RestaurantBanner.jpg'
-import HédonéLight from '../assets/Hédoné-Dark-Logo.jpg'
+//import Banner from '../assets/RestaurantBanner.jpg'
+import HédonéBanner from '../assets/Hédoné-Dark-Logo.jpg'
 
 const Home = () => {
   const links = [
     { name: 'Home', link: 'Home' },
     { name: 'About', link: 'About' },
     { name: 'Menu', link: 'Menu' },
+    { name: 'Reserveer', link: 'Reserveer' },
+    { name: 'Contact', link: 'Contact' },
   ]
 
   return (
     <div
       id='Home'
-      className='relative bg-gradient-to-tr h-full pb-60
-                from-gray-600 to-gray-600 w-full 
-                text-center'
+      className='bg-black pb-96 w-full 
+                text-center flex justify-center'
     >
-      <img
-        src={Banner}
-        alt='testBanner'
-        className='w-full h-full object-cover absolute mix-blend-overlay'
-      />
-      <nav className='flex items-center justify-between p-4 relative'>
+        <img height={120} src={HédonéBanner} alt='hedone' className='absolute bg-black' />
+      <nav className='flex justify-center p-4'>
         <div>
-          <span>
-            <img
-              className='w-28 rounded-2xl border-2 border-gray-600'
-              src={HédonéLight}
-              alt='testlogo'
-            />
-          </span>
-        </div>
-        <div>
-          <ul className='flex gap-8 nav-item'>
+          <ul className='flex gap-8 nav-item relative'>
             {links.map((link, index) => (
               <li key={index} className=''>
                 <Link
@@ -49,21 +37,7 @@ const Home = () => {
             ))}
           </ul>
         </div>
-        <div>
-          {/* costum color hier Bronz! achtergrondkleur van logo*/}
-          <button className='z-40 p-2 text-white rounded-lg hover:bg-orange-300 hover:text-gray-500 duration-200'>
-            Reserveer hier!
-          </button>
-        </div>
       </nav>
-
-      <div className='p-20 relative'>
-        <h1 className='text-gray-300 font-bold text-6xl'>Hédoné</h1>
-        <h3 className='text-gray-300 font-bold text-2xl mt-10'>
-          In een restaurant vol sfeer en pracht, Waar smaken dansen in de nacht. Een menu vol
-          verrassingen en genot, Bij elke hap een nieuwe plot.
-        </h3>
-      </div>
     </div>
   )
 }
