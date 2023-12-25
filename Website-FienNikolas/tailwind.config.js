@@ -7,7 +7,10 @@ export default {
   theme: {
     extend: {
       colors:{
-        'bronze': '#CD7F32'
+        'Primary': '#FFF5E9',
+        'secondary': '#f9f9f4',
+        'TextDark': '#D8BF9F',
+        'Bronze': '#AF220E'
       }
     },
   },

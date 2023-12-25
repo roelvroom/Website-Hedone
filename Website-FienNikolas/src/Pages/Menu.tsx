@@ -1,46 +1,50 @@
-import DummyFotoRestaurant from '../assets/Dummyfotorestaurant.jpg'
+import { useState, useEffect } from 'react';
+import '../App.css';
+import FotoTafelZaal from '../assets/FotoTafelZaal.jpeg'
+import FotoResStoel from '../assets/FotoResStoel.jpeg'
 
 const Menu = () => {
+  const fotoArray = [
+    '../assets/FotoTafelZaal.jpeg',
+    '../assets/FotoResStoel.jpeg',
+  ];
+
+  const [currentFotoIndex, setCurrentFotoIndex] = useState(0);
+
+  const toggleFoto = () => {
+    const yoffset = window.pageYOffset;
+
+    if (yoffset > 1500 && yoffset < 2000) {
+      setCurrentFotoIndex(0);
+    } else {
+      setCurrentFotoIndex(1);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', toggleFoto);
+
+    return () => {
+      window.removeEventListener('scroll', toggleFoto);
+    };
+  }, []);
+
   return (
-    <div>
+    <div id='Menu' className='pt-32'>
       <h1 className='text-4xl mb-6 text-center'>Menu</h1>
-      <div id='Menu' className='bg-gray-600 flex justify-center'>
-        <img
-          src={DummyFotoRestaurant}
-          alt='testBanner'
-          className='w-full h-full object-cover absolute mix-blend-overlay'
-        />
-        <section className='w-2/4 h-auto border my-7  bg-slate-200 rounded-lg'>
-          <div className='text-center w-full mt-10'>
-            <h2 className='mb-2'>
-              <span className='font-bold text-xl '>Gang 1</span>
-            </h2>
-            <h3 className='text-lg mb-8'>Ingrediënten - Extra - Dummy - Data</h3>
-
-            <h2 className='mb-2'>
-              <span className='font-bold text-xl '>Gang 2</span>
-            </h2>
-            <h3 className='text-lg mb-8'>Ingrediënten - Extra - Dummy - Data</h3>
-
-            <h2 className='mb-2'>
-              <span className='font-bold text-xl '>Gang 3</span>
-            </h2>
-            <h3 className='text-lg mb-8'>Ingrediënten - Extra - Dummy - Data</h3>
-
-            <h2 className='mb-2'>
-              <span className='font-bold text-xl '>Gang 4</span>
-            </h2>
-            <h3 className='text-lg mb-8'>Ingrediënten - Extra - Dummy - Data</h3>
-
-            <h2 className='mb-2'>
-              <span className='font-bold text-xl'>Gang 5</span>
-            </h2>
-            <h3 className='text-lg mb-6'>Ingrediënten - Extra - Dummy - Data</h3>
+      <div className={`bg-gray-600 flex justify-center image-transition`} style={{ opacity: '1', transitionDuration: '0.5s' }}>
+        {fotoArray.map((foto, index) => (
+          <div key={index} className={`foto-container ${currentFotoIndex === index ? 'visible' : 'hidden'}`}>
+            <img
+              src={foto}
+              alt={`Foto ${index + 1}`}
+              className='w-full h-full object-cover'
+            />
           </div>
-        </section>
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;

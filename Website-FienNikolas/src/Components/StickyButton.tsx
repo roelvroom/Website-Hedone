@@ -35,7 +35,7 @@ const StickyButton = () => {
         onClick={scrollToTop}
         className={className(
           isVisable ? 'opacity-100' : 'opacity-0',
-          'inline-flex items-center p-3 rounded-full shadow-sm text-white bg-orange-600 transition-opacity hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500',
+          'inline-flex items-center p-3 rounded-full shadow-sm text-white bg-Bronze transition-opacity hover:bg-Bronze hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-Bronze',
         )}
       >
         <BiArrowFromBottom className='h-6 w-6' aria-hidden='true' />
