@@ -12,10 +12,10 @@ const Menu = () => {
 
   return (
     <div className='carousel-container mt-72 font-light' id='Menu'>
-      <h1 className='overlay-title'>
-        <span className='text-TextDark text-7xl '>Menu</span>
-      </h1>
-      <div className='overlay-text bg-Primary opacity-80 shadow-xl border rounded-xl p-6 w-1/2 mb-4 text-xl'>
+      <div className='overlay-title flex justify-center'>
+        <span className=' overay-title text-TextDark text-7xl pb-20'>Menu</span>
+      </div>
+      <div className='overlay-text bg-Primary opacity-80 shadow-xl border rounded-xl p-6 w-1/2 mb-4 text-xl mt-10'>
         <h2 className='font-bold hover:text-Bronze duration-500' >Eerhoorentjesbrood</h2>
         <h3 className='mb-6'>aardpeer - spitskool - jeneverbes - ponzu</h3>
         <h2 className='font-bold hover:text-Bronze duration-500' >Artisjok</h2>
@@ -29,7 +29,6 @@ const Menu = () => {
       </div>
 
       <div className='white-background-container'>
-        
         <Carousel withIndicators height={200} plugins={[autoplay.current]} className='carousel'>
           <Carousel.Slide className='carousel-slide'>
             <img src={FotoResStoel} alt='FotoResStoel' className='carousel-image' />

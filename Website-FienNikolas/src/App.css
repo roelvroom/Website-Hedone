@@ -12,7 +12,6 @@
 
 .carousel-container {
   width: 100%;
-  /* height: 70vh; */
 }
 
 .carousel {
@@ -42,8 +41,18 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
   text-align: center;
+  color: black;
+  text-align: center;
+  z-index: 1;
+}
+
+.overlay-title {
+  position: flex;
+  
+  top: 50%;
+  color: white;
+  z-index: 1;
 }
 
 .carousel-image {
@@ -58,18 +67,6 @@
 .text-container {
   text-align: center;
   margin-bottom: 20px;
-}
-
-.overlay-text {
-  color: black;
-  text-align: center;
-  z-index: 1;
-}
-
-.overlay-title{
-  color: white;
-  text-align: center;
-  z-index: 1;
 }
 
 .carousel-container {
