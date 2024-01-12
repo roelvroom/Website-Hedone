@@ -30,7 +30,7 @@ export const Navbar = () => {
   }, [])
 
   return (
-    <nav className='flex justify-center p-4 fixed z-50'>
+    <nav className='flex justify-center p-4 fixed z-50 font-light'>
       <div>
         <ul className={className(
           show ? 'opacity-100' : 'opacity-0',

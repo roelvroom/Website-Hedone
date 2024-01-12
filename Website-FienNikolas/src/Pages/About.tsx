@@ -1,4 +1,5 @@
 import BgFoto from '../assets/FotoResStoel.jpg'
+import '../App.css'
 
 const About = () => {
   return (
@@ -11,11 +12,11 @@ const About = () => {
         backgroundSize: 'cover',
       }}
     >
-      <h1 className='text-7xl text-center text-white absolute top-10 left-1/2 transform -translate-x-1/2 '>
+      <h1 className='text-7xl text-center  text-white absolute top-10 left-1/2 transform -translate-x-1/2 '>
         <span className='text-TextDark '>About</span> <br /> us
       </h1>
       <div className='max-w-4xl mx-auto flex flex-col items-center pb-24 gap-24 mt-12'>
-        <div className='bg-white opacity-80 shadow-xl border rounded-xl p-6 w-3/4 mb-4 mr-96'>
+        <div className='bg-Primary opacity-80 shadow-xl border rounded-xl p-6 w-3/4 mb-4 mr-96 font-light'>
           <p>
             Hēdonē is de oud-Griekse godin waar het hedonisme zijn naam aan te danken heeft.
             Centraal staan: genot, plezier en Bourgondisch leven. Daar weten chef Davine Croughs en
@@ -27,7 +28,7 @@ const About = () => {
             dat personeel vinden een grote uitdaging is.
           </p>
         </div>
-        <div className='bg-white opacity-80 shadow-xl border rounded-xl p-6 w-3/4 mb-4 ml-96'>
+        <div className='bg-Primary opacity-80 shadow-xl border rounded-xl p-6 w-3/4 mb-4 ml-96 font-light'>
           <p id='test'>
             Met Hēdonē is voor Davine de cirkel rond want in het pand waar hun restaurant komt,
             begon ze ooit haar carrière in de horeca. Nicholas licht hun beslissing voor een eigen

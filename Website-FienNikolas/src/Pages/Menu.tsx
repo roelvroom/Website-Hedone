@@ -1,50 +1,49 @@
-import { useState, useEffect } from 'react';
-import '../App.css';
+import React, { useRef } from 'react'
+import '@mantine/carousel/styles.css'
+import Autoplay from 'embla-carousel-autoplay'
+import { Carousel } from '@mantine/carousel'
+import '../App.css'
 import FotoTafelZaal from '../assets/FotoTafelZaal.jpeg'
-import FotoResStoel from '../assets/FotoResStoel.jpeg'
+import FotoResStoel from '../assets/FotoResStoel.jpg'
+import FotoBarEnDrank from '../assets/FotoBarEnDrank.jpeg'
 
 const Menu = () => {
-  const fotoArray = [
-    '../assets/FotoTafelZaal.jpeg',
-    '../assets/FotoResStoel.jpeg',
-  ];
-
-  const [currentFotoIndex, setCurrentFotoIndex] = useState(0);
-
-  const toggleFoto = () => {
-    const yoffset = window.pageYOffset;
-
-    if (yoffset > 1500 && yoffset < 2000) {
-      setCurrentFotoIndex(0);
-    } else {
-      setCurrentFotoIndex(1);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', toggleFoto);
-
-    return () => {
-      window.removeEventListener('scroll', toggleFoto);
-    };
-  }, []);
+  const autoplay = useRef(Autoplay({ delay: 6000 }))
 
   return (
-    <div id='Menu' className='pt-32'>
-      <h1 className='text-4xl mb-6 text-center'>Menu</h1>
-      <div className={`bg-gray-600 flex justify-center image-transition`} style={{ opacity: '1', transitionDuration: '0.5s' }}>
-        {fotoArray.map((foto, index) => (
-          <div key={index} className={`foto-container ${currentFotoIndex === index ? 'visible' : 'hidden'}`}>
-            <img
-              src={foto}
-              alt={`Foto ${index + 1}`}
-              className='w-full h-full object-cover'
-            />
-          </div>
-        ))}
+    <div className='carousel-container mt-72 font-light' id='Menu'>
+      <h1 className='overlay-title'>
+        <span className='text-TextDark text-7xl '>Menu</span>
+      </h1>
+      <div className='overlay-text bg-Primary opacity-80 shadow-xl border rounded-xl p-6 w-1/2 mb-4 text-xl'>
+        <h2 className='font-bold hover:text-Bronze duration-500' >Eerhoorentjesbrood</h2>
+        <h3 className='mb-6'>aardpeer - spitskool - jeneverbes - ponzu</h3>
+        <h2 className='font-bold hover:text-Bronze duration-500' >Artisjok</h2>
+        <h3 className='mb-6'>Prei - verse geitenkaas - ravioli - pistache</h3>
+        <h2 className='font-bold hover:text-Bronze duration-500' >Witte truffel</h2>
+        <h3 className='mb-6'>Zilverui - zwarte knoflook - paprika - verjus</h3>
+        <h2 className='font-bold hover:text-Bronze duration-500' >Witloof</h2>
+        <h3 className='mb-6'>Knolselder - grot - spruit - zuurbes</h3>
+        <h2 className='font-bold hover:text-Bronze duration-500' >fontainebleau</h2>
+        <h3 className='mb-6'>framboos - agastache - pomelo - anaperitivo</h3>
+      </div>
+
+      <div className='white-background-container'>
+        
+        <Carousel withIndicators height={200} plugins={[autoplay.current]} className='carousel'>
+          <Carousel.Slide className='carousel-slide'>
+            <img src={FotoResStoel} alt='FotoResStoel' className='carousel-image' />
+          </Carousel.Slide>
+          <Carousel.Slide className='carousel-slide'>
+            <img src={FotoTafelZaal} alt='FotoTafelZaal' className='carousel-image' />
+          </Carousel.Slide>
+          <Carousel.Slide className='carousel-slide'>
+            <img src={FotoBarEnDrank} alt='FotoBarEnDrank' className='carousel-image' />
+          </Carousel.Slide>
+        </Carousel>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Menu;
+export default Menu

@@ -1,75 +1,101 @@
-// import { useEffect, useState } from 'react'
-// import { className } from '../../utils/className'
-import FotoTafelZaal from '../assets/FotoTafelZaal.jpeg'
-import FotoBarEnDrank from '../assets/FotoBarEnDrank.jpeg'
-import { useEffect, useState } from 'react'
-import ScrollImageSwitcher from '../Components/ScrollImageSwitcher'
+@model IEnumerable<MVC_Project.Models.StudyVisit>
 
-const Menu = () => {
-  const [switchFoto, setSwitchFoto] = useState(false)
-
-  const toggleFoto = () => {
-    const yoffset = window.pageYOffset
-    if (yoffset > 1800) {
-      setSwitchFoto(true)
-    } else {
-      setSwitchFoto(false)
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', toggleFoto)
-
-    return () => {
-      window.addEventListener('scroll', toggleFoto)
-    }
-  }, [])
-
-  return (
-    <div id='Menu' className='pt-32'>
-      <h1 className='text-4xl mb-6 text-center'>Menu</h1>
-      <div className='bg-gray-600 flex justify-center'>
-        <div className='duration-300'>
-          <img
-            src={switchFoto ? FotoTafelZaal : FotoBarEnDrank}
-            alt='testBanner'
-            className={`w-full h-full object-cover duration-300`}
-          />
-        </div>
-
-        {/* <section className='w-2/4 h-auto border my-7  bg-slate-200 rounded-lg'>
-          <div className='text-center w-full mt-10'>
-            <h2 className='mb-2'>
-              <span className='font-bold text-xl '>Gang 1</span>
-            </h2>
-            <h3 className='text-lg mb-8'>Ingrediënten - Extra - Dummy - Data</h3>
-
-            <h2 className='mb-2'>
-              <span className='font-bold text-xl '>Gang 2</span>
-            </h2>
-            <h3 className='text-lg mb-8'>Ingrediënten - Extra - Dummy - Data</h3>
-
-            <h2 className='mb-2'>
-              <span className='font-bold text-xl '>Gang 3</span>
-            </h2>
-            <h3 className='text-lg mb-8'>Ingrediënten - Extra - Dummy - Data</h3>
-
-            <h2 className='mb-2'>
-              <span className='font-bold text-xl '>Gang 4</span>
-            </h2>
-            <h3 className='text-lg mb-8'>Ingrediënten - Extra - Dummy - Data</h3>
-
-            <h2 className='mb-2'>
-              <span className='font-bold text-xl'>Gang 5</span>
-            </h2>
-            <h3 className='text-lg mb-6'>Ingrediënten - Extra - Dummy - Data</h3>
-          </div>
-        </section> */}
-      </div>
-
-
-    </div>
-  )
+@{
+    ViewData["Title"] = "Index";
 }
 
-export default Menu
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartHour)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndHour)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reason)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AmountStudents)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PriceStudyVisit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PriceTransport)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsApprovedCo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsApprovedDir)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsRejected)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsDone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Subject)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartHour)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndHour)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Reason)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AmountStudents)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PriceStudyVisit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PriceTransport)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsApprovedCo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsApprovedDir)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsRejected)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsDone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Subject.SubjectId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.StudyVisitId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.StudyVisitId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.StudyVisitId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
