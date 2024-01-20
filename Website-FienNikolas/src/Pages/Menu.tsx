@@ -11,7 +11,7 @@ const Menu = () => {
   const autoplay = useRef(Autoplay({ delay: 6000 }))
 
   return (
-    <div className='carousel-container mt-72 font-light' id='Menu'>
+    <div className='carousel-container mt-32 font-light' id='Menu'>
       <div className='overlay-title flex justify-center'>
         <span className=' overay-title text-TextDark text-7xl pb-20'>Menu</span>
       </div>
