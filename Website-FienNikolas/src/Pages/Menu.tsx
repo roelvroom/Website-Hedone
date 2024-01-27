@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import '@mantine/carousel/styles.css'
 import Autoplay from 'embla-carousel-autoplay'
 import { Carousel } from '@mantine/carousel'

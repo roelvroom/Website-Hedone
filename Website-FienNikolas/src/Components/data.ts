@@ -1,5 +1,4 @@
 import FienMetBrander from '../assets/FienMetBrander.jpg'
-import ZaalVerticaal from '../assets/ZaalVerticaal.jpg'
 import BarMetPotten from '../assets/BarMetPotten.jpg'
 import GedekteTafel from '../assets/GedekteTafel.jpg'
 import TafelTegenGorijnen from '../assets/TafelTegenGorijnen.jpg'
