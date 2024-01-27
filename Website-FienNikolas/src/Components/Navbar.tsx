@@ -17,6 +17,7 @@ export const Navbar = () => {
     { name: 'Home', link: 'Home' },
     { name: 'About', link: 'About' },
     { name: 'Menu', link: 'Menu' },
+    { name: 'Gallery', link: 'Gallery' },
     { name: 'Reserveer', link: 'Reserveer' },
     { name: 'Contact', link: 'Contact' },
   ]

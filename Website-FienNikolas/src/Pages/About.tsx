@@ -16,7 +16,7 @@ const About = () => {
         <span className='text-TextDark '>About</span> <br /> us
       </h1>
       <div className='max-w-4xl mx-auto flex flex-col items-center pb-24 gap-24 mt-12 '>
-        <div className='bg-Primary opacity-80 shadow-xl border rounded-xl p-6 w-3/4 mb-4 mr-96 font-light text-xl'>
+        <div className='bg-Primary opacity-80 shadow-xl border rounded-xl p-6 w-3/4 mb-4 mr-96 font-light'>
           <p>
             Hēdonē is de oud-Griekse godin waar het hedonisme zijn naam aan te danken heeft.
             Centraal staan: genot, plezier en Bourgondisch leven. Daar weten chef Davine Croughs en

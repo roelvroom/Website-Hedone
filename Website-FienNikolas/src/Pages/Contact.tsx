@@ -3,7 +3,7 @@ import '../App.css'
 const Contact = () => {
   return (
     <div id='Contact' className='w-3/4 m-auto pb-20 font-light'>
-      <h1 className='text-5xl text-center py-28'>Contact</h1>
+      <h1 className='text-7xl text-center text-TextDark py-28'>Contact</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
         <div className='grid grid-cols-2 gap-4'>
           <div>
