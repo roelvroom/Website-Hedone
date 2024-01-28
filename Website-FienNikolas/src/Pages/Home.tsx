@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div
       id='Home'
-      className='bg-Primary pb-96 
+      className='bg-Primary pb-96
                 text-center flex justify-center font-light'
     >
         <img src={HédonéBanner} alt='hedone' className='absolute' />
