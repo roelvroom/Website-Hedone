@@ -2,6 +2,9 @@ To do
 
 ${
     divider toevoegen
+    Menu/gallery int midden
+    contact checken int midden
+    coming soon page met logo ('comming soon! volg ons op instagram') + resengo!
 }
 
 inspiratie{
@@ -9,11 +12,22 @@ inspiratie{
     https://www.zilte.be
 }
 
-foto pagina{
-    tussen menu en reservatie 
-    inspiratie pintrest
+
+menu page{
+    effect y:0
+    prijs 
+    lunch (3 --> Flavors gangen)
+    diner ( 4 --> Taste 
+            5 --> Invite
+            6 --> Experience
+            gangen zo als de la rosa)
+    menu onderdelen in lunch en diner
 }
 
 Contact page{
-    google maps(dark mode --> pinneke 'bronze' (tailwind.config))
+    maandag/zondag sluit
+    dinsdag/vrijdag 12-14 19-21
+    zaterdag 19-21
+    --> zilte Praktisch page vanonder
+    insta erbij
 }

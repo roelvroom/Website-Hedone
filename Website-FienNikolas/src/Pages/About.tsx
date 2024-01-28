@@ -22,7 +22,7 @@ const About = () => {
       </Reveal>
       <div className='max-w-4xl mx-auto flex flex-col items-center pb-24 gap-24 mt-12 '>
         <Reveal>
-          <div className='bg-Primary opacity-80 shadow-xl border rounded-xl p-6 w-3/4 mb-4 mr-72 font-light'>
+          <div className='bg-Primary opacity-80 shadow-xl border p-6 w-3/4 mb-4 mr-72 font-light'>
             <p>
               Hēdonē is de oud-Griekse godin waar het hedonisme zijn naam aan te danken heeft.
               Centraal staan: genot, plezier en Bourgondisch leven. Daar weten chef Davine Croughs
@@ -36,7 +36,7 @@ const About = () => {
           </div>
         </Reveal>
         <Reveal>
-          <div className='bg-Primary opacity-80 shadow-xl border rounded-xl p-6 w-3/4 mb-4 ml-72 font-light'>
+          <div className='bg-Primary opacity-80 shadow-xl border p-6 w-3/4 mb-4 ml-72 font-light'>
             <p id='test'>
               Met Hēdonē is voor Davine de cirkel rond want in het pand waar hun restaurant komt,
               begon ze ooit haar carrière in de horeca. Nicholas licht hun beslissing voor een eigen

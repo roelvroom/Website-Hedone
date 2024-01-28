@@ -20,7 +20,7 @@ const Menu = () => {
           <span className=' overay-title text-TextDark text-7xl pb-20'>Menu</span>
         </div>
       </Reveal>
-      <div className='overlay-text bg-Primary opacity-80 shadow-xl border rounded-xl p-6 w-1/2 mb-4 text-xl mt-10'>
+      <div className='overlay-text bg-Primary opacity-80 shadow-xl border p-6 w-1/2 mb-4 text-xl mt-10'>
         <RevealLeft>
           <div>
             <h2 className='font-bold'>Eerhoorentjesbrood</h2>

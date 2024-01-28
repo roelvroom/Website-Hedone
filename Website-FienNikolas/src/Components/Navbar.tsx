@@ -35,7 +35,7 @@ export const Navbar = () => {
       <div>
         <ul className={className(
           show ? 'opacity-100' : 'opacity-0',
-          'bg-Primary p-2 flex gap-5 rounded-xl'
+          'bg-Primary p-2 flex gap-5 '
         )}> 
           {links.map((link, index) => (
             <li key={index} className=''>

@@ -55,7 +55,7 @@ const Contact = () => {
               allowFullScreen
               loading='lazy'
               referrerPolicy='no-referrer-when-downgrade'
-              className="border-gray-300 border-8 rounded-xl"
+              className="border-gray-300 border-8 "
             ></iframe>
           </div>
         </div>
