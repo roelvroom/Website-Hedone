@@ -6,7 +6,7 @@ interface Props {
   children: JSX.Element
 }
 
-export const Reveal = ({ children }: Props) => {
+export const RevealBottom = ({ children }: Props) => {
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true })
     const mainControles = useAnimation()
@@ -34,4 +34,4 @@ export const Reveal = ({ children }: Props) => {
   )
 }
 
-export default Reveal
+export default RevealBottom

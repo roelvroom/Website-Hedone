@@ -1,6 +1,6 @@
 import BgFoto from '../assets/FotoResStoel.jpg'
 import '../App.css'
-import Reveal from '../Components/RevealBottom'
+import RevealBottom from '../Components/RevealBottom'
 
 const About = () => {
   return (
@@ -13,15 +13,15 @@ const About = () => {
         backgroundSize: 'cover',
       }}
     >
-      <Reveal>
+      <RevealBottom>
         <div className='overlay-title flex justify-center'>
           <span className=' overay-title text-TextDark text-7xl text-center'>
             About <br /> us
           </span>
         </div>
-      </Reveal>
+      </RevealBottom>
       <div className='max-w-4xl mx-auto flex flex-col items-center pb-24 gap-24 mt-12 '>
-        <Reveal>
+        <RevealBottom>
           <div className='bg-Primary opacity-80 shadow-xl border p-6 w-3/4 mb-4 mr-72 font-light'>
             <p>
               Hēdonē is de oud-Griekse godin waar het hedonisme zijn naam aan te danken heeft.
@@ -34,8 +34,8 @@ const About = () => {
               beseffen we dat personeel vinden een grote uitdaging is.
             </p>
           </div>
-        </Reveal>
-        <Reveal>
+        </RevealBottom>
+        <RevealBottom>
           <div className='bg-Primary opacity-80 shadow-xl border p-6 w-3/4 mb-4 ml-72 font-light'>
             <p id='test'>
               Met Hēdonē is voor Davine de cirkel rond want in het pand waar hun restaurant komt,
@@ -48,7 +48,7 @@ const About = () => {
               vind ik een heel mooi aspect van koken.”
             </p>
           </div>
-        </Reveal>
+        </RevealBottom>
       </div>
     </div>
   )

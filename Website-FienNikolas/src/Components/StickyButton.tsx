@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { BiArrowFromBottom } from 'react-icons/bi'
 import { className } from '../../utils/className'
+import { motion, useInView, useAnimation } from 'framer-motion'
 
 const StickyButton = () => {
   const [isVisable, setIsVisable] = useState(false)
@@ -30,16 +31,17 @@ const StickyButton = () => {
 
   return (
     <div className='fixed bottom-2 right-2'>
-      <button
+      <motion.button
+        whileHover={{scale: 1.2, }}
         type='button'
         onClick={scrollToTop}
         className={className(
           isVisable ? 'opacity-100' : 'opacity-0',
-          'inline-flex items-center p-3 rounded-full shadow-sm text-white bg-Bronze transition-opacity hover:bg-Bronze hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-Bronze',
+          'inline-flex items-center p-3 rounded-full shadow-sm text-white bg-Bronze transition-opacity hover:bg-Bronze  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-Bronze',
         )}
       >
         <BiArrowFromBottom className='h-6 w-6' aria-hidden='true' />
-      </button>
+      </motion.button>
     </div>
   )
 }

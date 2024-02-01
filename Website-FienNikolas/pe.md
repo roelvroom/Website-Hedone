@@ -1,7 +1,6 @@
 To do
 
 ${
-    divider toevoegen
     Menu/gallery int midden
     contact checken int midden
     coming soon page met logo ('comming soon! volg ons op instagram') + resengo!
@@ -25,9 +24,9 @@ menu page{
 }
 
 Contact page{
-    maandag/zondag sluit
-    dinsdag/vrijdag 12-14 19-21
-    zaterdag 19-21
+    maandag/zondag sluit --> x
+    dinsdag/vrijdag 12-14 19-21 --> x
+    zaterdag 19-21 --> x
     --> zilte Praktisch page vanonder
     insta erbij
 }

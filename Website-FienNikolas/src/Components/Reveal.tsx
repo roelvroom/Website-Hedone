@@ -6,7 +6,7 @@ interface Props {
   children: JSX.Element
 }
 
-export const RevealMenu = ({ children }: Props) => {
+export const Reveal = ({ children }: Props) => {
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true })
     const mainControles = useAnimation()
@@ -21,12 +21,12 @@ export const RevealMenu = ({ children }: Props) => {
     <div ref={ref}>
       <motion.div
         variants={{
-          left: { opacity: 0, x: 100 },
-          visible: { opacity: 1, x: 0 },
+          right: { opacity: 0 },
+          visible: { opacity: 1,},
         }}
-        initial="left"
+        initial="right"
         animate={ mainControles }
-        transition={{ duration: 0.75 }}
+        transition={{ duration: 2.7 }}
       >
         {children}
       </motion.div>
@@ -34,4 +34,4 @@ export const RevealMenu = ({ children }: Props) => {
   )
 }
 
-export default RevealMenu
+export default Reveal
