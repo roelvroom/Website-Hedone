@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { BiArrowFromBottom } from 'react-icons/bi'
 import { className } from '../../utils/className'
-import { motion, useInView, useAnimation } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const StickyButton = () => {
   const [isVisable, setIsVisable] = useState(false)

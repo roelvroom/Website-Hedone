@@ -1,69 +1,131 @@
-import { useRef } from 'react'
-import '@mantine/carousel/styles.css'
-import Autoplay from 'embla-carousel-autoplay'
-import { Carousel } from '@mantine/carousel'
+// import { useRef } from 'react'
+// import '@mantine/carousel/styles.css'
+// import Autoplay from 'embla-carousel-autoplay'
+// import { Carousel } from '@mantine/carousel'
 import '../App.css'
 import FotoTafelZaal from '../assets/FotoTafelZaal.jpeg'
 import FotoResStoel from '../assets/FotoResStoel.jpg'
 import FotoBarEnDrank from '../assets/FotoBarEnDrank.jpeg'
 import RevealBottom from '../Components/RevealBottom'
+import FotoBuiten from '../assets/FotoBuiten.jpg'
 import Reveal from '../Components/Reveal'
 
 const Menu = () => {
-  const autoplay = useRef(Autoplay({ delay: 6000 }))
+  // const autoplay = useRef(Autoplay({ delay: 6000 }))
 
   return (
-    <div id='Menu' className='carousel-container mt-20 font-light'>
+    <div>
       <RevealBottom>
-        <div className='overlay-title flex justify-center'>
-          <span className=' overay-title text-TextDark text-7xl pb-20'>Menu</span>
+        <div className='flex justify-center'>
+          <span className='overay-title text-TextDark text-7xl pt-20'>Menu</span>
         </div>
       </RevealBottom>
-      <div className='overlay-text bg-Primary opacity-80 shadow-xl border p-6 w-1/2 mb-4 text-xl mt-10'>
-        <Reveal>
-          <div>
-            <h2 className='font-bold'>Eerhoorentjesbrood</h2>
-            <h3 className='mb-6'>aardpeer - spitskool - jeneverbes - ponzu</h3>
-          </div>
-        </Reveal>
-        <Reveal>
-          <div>
-            <h2 className='font-bold'>Artisjok</h2>
-            <h3 className='mb-6'>Prei - verse geitenkaas - ravioli - pistache</h3>
-          </div>
-        </Reveal>
-        <Reveal>
-          <div>
-            <h2 className='font-bold'>Witte truffel</h2>
-            <h3 className='mb-6'>Zilverui - zwarte knoflook - paprika - verjus</h3>
-          </div>
-        </Reveal>
-        <Reveal>
-          <div>
-            <h2 className='font-bold'>Witloof</h2>
-            <h3 className='mb-6'>Knolselder - grot - spruit - zuurbes</h3>
-          </div>
-        </Reveal>
-        <Reveal>
-          <div>
-            <h2 className='font-bold'>fontainebleau</h2>
-            <h3 className='mb-6'>framboos - agastache - pomelo - anaperitivo</h3>
-          </div>
-        </Reveal>
-      </div>
 
-      <div className='white-background-container'>
-        <Carousel withIndicators height={200} plugins={[autoplay.current]} className='carousel'>
-          <Carousel.Slide className='carousel-slide'>
-            <img src={FotoResStoel} alt='FotoResStoel' className='carousel-image' />
-          </Carousel.Slide>
-          <Carousel.Slide className='carousel-slide'>
-            <img src={FotoTafelZaal} alt='FotoTafelZaal' className='carousel-image' />
-          </Carousel.Slide>
-          <Carousel.Slide className='carousel-slide'>
-            <img src={FotoBarEnDrank} alt='FotoBarEnDrank' className='carousel-image' />
-          </Carousel.Slide>
-        </Carousel>
+      <div id='Menu' className='grid mt-20'>
+        <div className='grid grid-cols-2'>
+          <div className='bg-Primary opacity-80 shadow-xl w-96 border p-5 mt-20 mx-auto font-light h-96 text-center'>
+            <Reveal>
+              <h1 className='text-5xl mb-6'>Lunch</h1>
+            </Reveal>
+            <Reveal>
+              <div>
+                <h2 className='font-bold'>Eerhoorentjesbrood</h2>
+                <h3 className='mb-6'>aardpeer - spitskool - jeneverbes - ponzu</h3>
+              </div>
+            </Reveal>
+            <Reveal>
+              <div>
+                <h2 className='font-bold'>Witloof</h2>
+                <h3 className='mb-6'>Knolselder - grot - spruit - zuurbes</h3>
+              </div>
+            </Reveal>
+            <Reveal>
+              <div>
+                <h2 className='font-bold'>fontainebleau</h2>
+                <h3 className='mb-6'>framboos - agastache - pomelo - anaperitivo</h3>
+              </div>
+            </Reveal>
+            <p className='italic text-sm'>€50.00 pp - Lunchmenu</p>
+          </div>
+          <Reveal>
+            <div className='relative mx-auto'>
+              <img
+                src={FotoBarEnDrank}
+                alt='FotoBarEnDrank'
+                className='w-3/4 mt-20 h-[380px] object-cover mx-auto shadow-xl'
+              />
+            </div>
+          </Reveal>
+        </div>
+        <div className='grid grid-cols-2'>
+          <div>
+            <Reveal>
+              <div className='relative mx-auto'>
+                <img
+                  src={FotoBuiten}
+                  alt='FotoBuiten'
+                  className='w-3/4 mt-32 h-[705px] object-cover mx-auto shadow-xl'
+                />
+              </div>
+            </Reveal>
+          </div>
+          <div className='bg-Primary opacity-80 shadow-xl border p-6 w-96 ml-20 mb-20 font-light mt-32 text-center'>
+            <Reveal>
+              <h1 className='text-5xl mb-6'>Diner</h1>
+            </Reveal>
+            <Reveal>
+              <div>
+                <h2 className='font-bold'>Eerhoorentjesbrood</h2>
+                <h3 className='mb-6'>aardpeer - spitskool - jeneverbes - ponzu</h3>
+              </div>
+            </Reveal>
+            <Reveal>
+              <div>
+                <h2 className='font-bold'>Artisjok *</h2>
+                <h3 className='mb-6'>Prei - verse geitenkaas - ravioli - pistache</h3>
+              </div>
+            </Reveal>
+            <Reveal>
+              <div>
+                <h2 className='font-bold'>Witte truffel **</h2>
+                <h3 className='mb-6'>Zilverui - zwarte knoflook - paprika - verjus</h3>
+              </div>
+            </Reveal>
+            <Reveal>
+              <div>
+                <h2 className='font-bold'>Witloof ***</h2>
+                <h3 className='mb-6'>Knolselder - grot - spruit - zuurbes</h3>
+              </div>
+            </Reveal>
+            <Reveal>
+              <div>
+                <h2 className='font-bold'>Stoofvlees</h2>
+                <h3 className='mb-6'>frieten - homemade mayonaise - slaatje</h3>
+              </div>
+            </Reveal>
+            <Reveal>
+              <div>
+                <h2 className='font-bold'>fontainebleau</h2>
+                <h3 className='mb-6'>framboos - agastache - pomelo - anaperitivo</h3>
+              </div>
+            </Reveal>
+            <p className='italic text-sm'>€84.00 pp 4 - gangenmenu *</p>
+            <p className='italic text-sm'>€95.00 pp 5 - gangenmenu **</p>
+            <p className='italic text-sm'>€107.00 pp 6 - gangenmenu ***</p>
+          </div>
+        </div>
+
+        {/* <Carousel withIndicators height={400} plugins={[autoplay.current]} className='carousel'>
+        <Carousel.Slide className='carousel-slide'>
+          <img src={FotoResStoel} alt='FotoResStoel' className='carousel-image' />
+        </Carousel.Slide>
+        <Carousel.Slide className='carousel-slide'>
+          <img src={FotoTafelZaal} alt='FotoTafelZaal' className='carousel-image' />
+        </Carousel.Slide>
+        <Carousel.Slide className='carousel-slide'>
+          <img src={FotoBarEnDrank} alt='FotoBarEnDrank' className='carousel-image' />
+        </Carousel.Slide>
+      </Carousel> */}
       </div>
     </div>
   )

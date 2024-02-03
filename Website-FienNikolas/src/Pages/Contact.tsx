@@ -11,8 +11,8 @@ const Contact = () => {
         <div className='grid grid-cols-2 gap-3'>
           <div>
             <h1 className='font-bold pb-2'>Adress</h1>
-            <p>Janssensstraat 34</p>
-            <p>Tongeren 3717</p>
+            <p>Stationslaan 6</p>
+            <p>Tongeren 3700</p>
 
             <br />
 
