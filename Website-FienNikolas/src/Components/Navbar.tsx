@@ -14,10 +14,9 @@ export const Navbar = () => {
   }
 
   const links = [
-    { name: 'Home', link: 'Home' },
-    { name: 'About', link: 'About' },
+    { name: 'Over ons', link: 'About' },
     { name: 'Menu', link: 'Menu' },
-    { name: 'Gallery', link: 'Gallery' },
+    { name: 'Sfeer', link: 'Gallery' },
     { name: 'Reserveer', link: 'Reserveer' },
     { name: 'Contact', link: 'Contact' },
   ]

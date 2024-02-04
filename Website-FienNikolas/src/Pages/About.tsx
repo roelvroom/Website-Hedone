@@ -16,7 +16,7 @@ const About = () => {
       <RevealBottom>
         <div className='overlay-title flex justify-center'>
           <span className=' overay-title text-TextDark text-7xl text-center'>
-            About <br /> us
+            Over <br /> ons
           </span>
         </div>
       </RevealBottom>

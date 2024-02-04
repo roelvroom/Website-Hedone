@@ -7,7 +7,7 @@ const Gallery = () => {
     <div className='p-4'>
       <RevealBottom>
         <h1 id='Gallery' className='text-TextDark text-7xl pt-20 text-center'>
-          Gallery
+          Sfeer
         </h1>
       </RevealBottom>
       <div className='grid grid-cols-1 md:grid-cols-3 gap-4 pt-20'>

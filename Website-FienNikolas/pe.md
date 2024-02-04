@@ -30,3 +30,7 @@ Contact page{
     --> zilte Praktisch page vanonder
     insta erbij
 }
+
+coming soon page{
+    landing van website ('coming soon follow us on ==> insta ')
+}

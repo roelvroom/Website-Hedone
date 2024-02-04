@@ -25,8 +25,11 @@ const Menu = () => {
         <div className='grid grid-cols-2'>
           <div className='bg-Primary opacity-80 shadow-xl w-96 border p-5 mt-20 mx-auto font-light h-96 text-center'>
             <Reveal>
-              <h1 className='text-5xl mb-6'>Lunch</h1>
+              <div>
+                <h1 className='text-5xl mb-6'>Lunch <span className='italic text-sm'>50</span></h1>
+              </div>
             </Reveal>
+
             <Reveal>
               <div>
                 <h2 className='font-bold'>Eerhoorentjesbrood</h2>
@@ -42,10 +45,9 @@ const Menu = () => {
             <Reveal>
               <div>
                 <h2 className='font-bold'>fontainebleau</h2>
-                <h3 className='mb-6'>framboos - agastache - pomelo - anaperitivo</h3>
+                <h3 className=''>framboos - agastache - pomelo - anaperitivo</h3>
               </div>
             </Reveal>
-            <p className='italic text-sm'>€50.00 pp - Lunchmenu</p>
           </div>
           <Reveal>
             <div className='relative mx-auto'>
@@ -81,19 +83,19 @@ const Menu = () => {
             </Reveal>
             <Reveal>
               <div>
-                <h2 className='font-bold'>Artisjok *</h2>
+                <h2 className='font-bold'>Artisjok</h2>
                 <h3 className='mb-6'>Prei - verse geitenkaas - ravioli - pistache</h3>
               </div>
             </Reveal>
             <Reveal>
               <div>
-                <h2 className='font-bold'>Witte truffel **</h2>
+                <h2 className='font-bold'>Witte truffel *</h2>
                 <h3 className='mb-6'>Zilverui - zwarte knoflook - paprika - verjus</h3>
               </div>
             </Reveal>
             <Reveal>
               <div>
-                <h2 className='font-bold'>Witloof ***</h2>
+                <h2 className='font-bold'>Witloof **</h2>
                 <h3 className='mb-6'>Knolselder - grot - spruit - zuurbes</h3>
               </div>
             </Reveal>
@@ -109,9 +111,9 @@ const Menu = () => {
                 <h3 className='mb-6'>framboos - agastache - pomelo - anaperitivo</h3>
               </div>
             </Reveal>
-            <p className='italic text-sm'>€84.00 pp 4 - gangenmenu *</p>
-            <p className='italic text-sm'>€95.00 pp 5 - gangenmenu **</p>
-            <p className='italic text-sm'>€107.00 pp 6 - gangenmenu ***</p>
+            <p className='italic text-sm'>4 gangen - 84</p>
+            <p className='italic text-sm'>5 gangen * - 96</p>
+            <p className='italic text-sm'>6 gangen ** - 107</p>
           </div>
         </div>
 
