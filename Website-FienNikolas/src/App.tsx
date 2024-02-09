@@ -1,20 +1,23 @@
 import './App.css'
-import StickyButton from './Components/StickyButton'
-import About from './Pages/About'
-import Contact from './Pages/Contact'
-import Gallery from './Pages/Gallery'
+import ComingSoonPage from './Pages/ComingSoonPage'
 import Home from './Pages/Home'
+import About from './Pages/About'
+import Gallery from './Pages/Gallery'
 import Menu from './Pages/Menu'
+import Contact from './Pages/Contact'
+import StickyButton from './Components/StickyButton'
 
 function App() {
   return (
     <div className='bg-Primary'>
-      <Home />
+      <ComingSoonPage />
+
+      {/* <Home />
       <About />
       <Menu />
       <Gallery/>
       <Contact />
-      <StickyButton />
+      <StickyButton /> */}
     </div>
   )
 }

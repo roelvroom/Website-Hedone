@@ -1,5 +1,6 @@
 import '../App.css'
 import RevealBottom from '../Components/RevealBottom'
+import { FaInstagram } from 'react-icons/fa'
 
 const Contact = () => {
   return (
@@ -21,7 +22,11 @@ const Contact = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem possimus quaerat
               laboriosam necessitatibus quas modi
             </p>
-
+            <div className='mt-6'>
+              <a href='het instagram acc' target='_blank' rel='nooper noreferrer'>
+                <FaInstagram className='h-8 w-8 ' aria-hidden='true' />
+              </a>
+            </div>
             <br />
           </div>
           <div className='text-base text-end'>

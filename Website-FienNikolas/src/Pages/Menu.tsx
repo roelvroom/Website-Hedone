@@ -1,17 +1,10 @@
-// import { useRef } from 'react'
-// import '@mantine/carousel/styles.css'
-// import Autoplay from 'embla-carousel-autoplay'
-// import { Carousel } from '@mantine/carousel'
 import '../App.css'
-import FotoTafelZaal from '../assets/FotoTafelZaal.jpeg'
-import FotoResStoel from '../assets/FotoResStoel.jpg'
 import FotoBarEnDrank from '../assets/FotoBarEnDrank.jpeg'
 import RevealBottom from '../Components/RevealBottom'
 import FotoBuiten from '../assets/FotoBuiten.jpg'
 import Reveal from '../Components/Reveal'
 
 const Menu = () => {
-  // const autoplay = useRef(Autoplay({ delay: 6000 }))
 
   return (
     <div>
@@ -116,18 +109,6 @@ const Menu = () => {
             <p className='italic text-sm'>6 gangen ** - 107</p>
           </div>
         </div>
-
-        {/* <Carousel withIndicators height={400} plugins={[autoplay.current]} className='carousel'>
-        <Carousel.Slide className='carousel-slide'>
-          <img src={FotoResStoel} alt='FotoResStoel' className='carousel-image' />
-        </Carousel.Slide>
-        <Carousel.Slide className='carousel-slide'>
-          <img src={FotoTafelZaal} alt='FotoTafelZaal' className='carousel-image' />
-        </Carousel.Slide>
-        <Carousel.Slide className='carousel-slide'>
-          <img src={FotoBarEnDrank} alt='FotoBarEnDrank' className='carousel-image' />
-        </Carousel.Slide>
-      </Carousel> */}
       </div>
     </div>
   )
