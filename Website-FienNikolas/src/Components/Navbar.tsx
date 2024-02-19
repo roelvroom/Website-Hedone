@@ -39,12 +39,12 @@ export const Navbar = () => {
   }, [])
 
   return (
-    <nav className='flex justify-center p-4 fixed z-50 font-light'>
-      <div>
+    <nav className='flex justify-center m-auto p-4 fixed z-50 font-light'>
+      <div className='justify-center'>
         <div onClick={HandleNav} className='block md:hidden'>
           {nav ? <IoClose /> : <MdNavigateNext />}
         </div>
-        <ul className={className(show ? 'opacity-100' : 'opacity-0', 'bg-Primary p-2 flex gap-5 ')}>
+        <ul className={className(show ? 'opacity-100' : 'opacity-0', 'bg-Primary p-2 flex gap-5')}>
           {links.map((link, index) => (
             <li key={index} className=''>
               <Link

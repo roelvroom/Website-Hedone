@@ -6,11 +6,11 @@ const Home = () => {
   return (
     <div
       id='Home'
-      className='bg-Primary h-screen
-                text-center flex justify-center font-light'
+      className='bg-Primary h-screen 
+                text-center flex justify-center align-middle font-light'
     >
-      <div className='items-center'>
-        <img src={HédonéBanner} alt='hedone' className='relative' />
+      <div>
+        <img src={HédonéBanner} alt='hedone' className='mt-32 md:mt-0' />
       </div>
       <Navbar />
     </div>
