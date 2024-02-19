@@ -6,7 +6,7 @@ const Gallery = () => {
   return (
     <div className='p-4' id='Gallery'>
       <RevealBottom>
-        <h1  className='text-TextDark text-7xl md:pt-20 text-center'>
+        <h1  className='text-TextDark text-7xl md:pt-20 text-center pt-10 md:my-10'>
           Sfeer
         </h1>
       </RevealBottom>

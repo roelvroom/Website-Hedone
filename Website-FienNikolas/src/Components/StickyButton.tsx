@@ -32,7 +32,9 @@ const StickyButton = () => {
   return (
     <div className='fixed bottom-2 right-2'>
       <motion.button
-        whileHover={{scale: 1.2, }}
+        whileHover={{ scale: 1.1 }}
+        animate={{ x:0 }}
+        transition={{ ease: "easeInOut", duration: 5 }}
         type='button'
         onClick={scrollToTop}
         className={className(

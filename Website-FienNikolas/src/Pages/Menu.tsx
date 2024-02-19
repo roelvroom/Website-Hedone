@@ -10,11 +10,11 @@ const Menu = () => {
     <div id='Menu'>
       <RevealBottom>
         <div className='flex justify-center'>
-          <span className='overay-title text-TextDark text-7xl pt-20'>Menu</span>
+          <span className='overay-title text-TextDark text-7xl py-10 mt-5 '>Menu</span>
         </div>
       </RevealBottom>
 
-      <div  className='grid mt-20'>
+      <div  className='grid '>
         <div className='grid grid-cols-1 md:grid-cols-2 '>
           <div className='bg-Primary opacity-80 shadow-xl w-96 border p-5 md:mt-20 mx-auto font-light h-96 text-center'>
             <Reveal>
@@ -68,7 +68,7 @@ const Menu = () => {
               </div>
             </Reveal>
           </div>
-          <div className='bg-Primary opacity-80 shadow-xl border p-6 w-96 m-auto md:ml-28 mb-20 font-light mt-20 text-center'>
+          <div className='bg-Primary opacity-80 shadow-xl border p-6 w-96 m-auto md:ml-28 font-light mt-20 text-center'>
             <Reveal>
               <h1 className='text-5xl mb-6'>Diner</h1>
             </Reveal>

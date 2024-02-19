@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div id='Contact' className='w-3/4 m-auto pb-20 font-light'>
       <RevealBottom>
-        <h1 className='text-7xl text-center text-TextDark py-28'>Contact</h1>
+        <h1 className='text-7xl text-center text-TextDark py-20 md:py-14 md:my-10'>Contact</h1>
       </RevealBottom>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-3 text-sm md:text-base'>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
