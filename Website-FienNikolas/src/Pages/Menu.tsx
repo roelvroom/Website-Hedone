@@ -4,26 +4,19 @@ import RevealBottom from '../Components/RevealBottom'
 import FotoBuiten from '../assets/FotoBuiten.jpg'
 import Reveal from '../Components/Reveal'
 
-import Autoplay from 'embla-carousel-autoplay'
-import { Carousel } from '@mantine/carousel'
-import { useRef } from 'react'
-import FotoResStoel from '../assets/FotoResStoel.jpg'
-import FotoTafelZaal from '../assets/FotoTafelZaal.jpeg'
-
 const Menu = () => {
-  const autoplay = useRef(Autoplay({ delay: 2000 }))
 
   return (
-    <div>
+    <div id='Menu'>
       <RevealBottom>
         <div className='flex justify-center'>
           <span className='overay-title text-TextDark text-7xl pt-20'>Menu</span>
         </div>
       </RevealBottom>
 
-      <div id='Menu' className='grid mt-20'>
-        <div className='grid grid-cols-2'>
-          <div className='bg-Primary opacity-80 shadow-xl w-96 border p-5 mt-20 mx-auto font-light h-96 text-center'>
+      <div  className='grid mt-20'>
+        <div className='grid grid-cols-1 md:grid-cols-2 '>
+          <div className='bg-Primary opacity-80 shadow-xl w-96 border p-5 md:mt-20 mx-auto font-light h-96 text-center'>
             <Reveal>
               <div>
                 <h1 className='text-5xl mb-6'>
@@ -63,19 +56,19 @@ const Menu = () => {
             </div>
           </Reveal>
         </div>
-        <div className='grid grid-cols-2'>
+        <div className='grid grid-cols-1 md:grid-cols-2'>
           <div>
             <Reveal>
               <div className='relative mx-auto'>
                 <img
                   src={FotoBuiten}
                   alt='FotoBuiten'
-                  className='w-3/4 mt-32 h-[705px] object-cover mx-auto shadow-xl'
+                  className='w-3/4 mt-20 h-[705px] object-cover mx-auto shadow-xl'
                 />
               </div>
             </Reveal>
           </div>
-          <div className='bg-Primary opacity-80 shadow-xl border p-6 w-96 ml-20 mb-20 font-light mt-32 text-center'>
+          <div className='bg-Primary opacity-80 shadow-xl border p-6 w-96 m-auto md:ml-28 mb-20 font-light mt-20 text-center'>
             <Reveal>
               <h1 className='text-5xl mb-6'>Diner</h1>
             </Reveal>

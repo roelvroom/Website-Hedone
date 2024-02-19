@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div
       id='About'
-      className='pt-20 relative mt-56 p-5 md:p-0'
+      className='pt-20 relative mt-56 p-5 md:p-7'
       style={{
         minHeight: '50vh',
         background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${BgFoto}) no-repeat center center fixed`,

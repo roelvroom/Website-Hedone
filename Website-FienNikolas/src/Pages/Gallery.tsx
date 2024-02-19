@@ -4,9 +4,9 @@ import { afbeeldingen } from '../Components/data'
 
 const Gallery = () => {
   return (
-    <div className='p-4'>
+    <div className='p-4' id='Gallery'>
       <RevealBottom>
-        <h1 id='Gallery' className='text-TextDark text-7xl pt-20 text-center'>
+        <h1  className='text-TextDark text-7xl md:pt-20 text-center'>
           Sfeer
         </h1>
       </RevealBottom>
