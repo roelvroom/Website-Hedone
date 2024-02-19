@@ -30,16 +30,14 @@ const StickyButton = () => {
   }, [])
 
   return (
-    <div className='fixed bottom-2 right-2'>
+    <div className='fixed bottom-2 right-2' >
       <motion.button
         whileHover={{ scale: 1.1 }}
-        animate={{ x:0 }}
-        transition={{ ease: "easeInOut", duration: 5 }}
         type='button'
         onClick={scrollToTop}
         className={className(
           isVisable ? 'opacity-100' : 'opacity-0',
-          'inline-flex items-center p-3 rounded-full shadow-sm text-white bg-TextDark transition-opacity hover:bg-TextDark  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-TextDark',
+          'inline-flex items-center p-3 rounded-full shadow-sm text-white bg-TextDark transition-opacity hover:bg-TextDark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-TextDark',
         )}
       >
         <BiArrowFromBottom className='h-6 w-6' aria-hidden='true' />

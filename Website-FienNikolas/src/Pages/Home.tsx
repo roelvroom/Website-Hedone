@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div
       id='Home'
-      className='bg-Primary w-screen h-screen
+      className='bg-Primary h-screen
                 text-center flex justify-center font-light'
     >
       <div className='items-center'>
