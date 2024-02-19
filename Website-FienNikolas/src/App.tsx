@@ -1,5 +1,5 @@
 import './App.css'
-import ComingSoonPage from './Pages/ComingSoonPage'
+//import ComingSoonPage from './Pages/ComingSoonPage'
 import Home from './Pages/Home'
 import About from './Pages/About'
 import Gallery from './Pages/Gallery'
@@ -10,14 +10,14 @@ import StickyButton from './Components/StickyButton'
 function App() {
   return (
     <div className='bg-Primary'>
-      <ComingSoonPage />
+      {/* <ComingSoonPage /> */}
 
-      {/* <Home />
+      <Home />
       <About />
       <Menu />
       <Gallery/>
       <Contact />
-      <StickyButton /> */}
+      <StickyButton />
     </div>
   )
 }

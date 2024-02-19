@@ -4,7 +4,14 @@ import RevealBottom from '../Components/RevealBottom'
 import FotoBuiten from '../assets/FotoBuiten.jpg'
 import Reveal from '../Components/Reveal'
 
+import Autoplay from 'embla-carousel-autoplay'
+import { Carousel } from '@mantine/carousel'
+import { useRef } from 'react'
+import FotoResStoel from '../assets/FotoResStoel.jpg'
+import FotoTafelZaal from '../assets/FotoTafelZaal.jpeg'
+
 const Menu = () => {
+  const autoplay = useRef(Autoplay({ delay: 2000 }))
 
   return (
     <div>
@@ -19,7 +26,9 @@ const Menu = () => {
           <div className='bg-Primary opacity-80 shadow-xl w-96 border p-5 mt-20 mx-auto font-light h-96 text-center'>
             <Reveal>
               <div>
-                <h1 className='text-5xl mb-6'>Lunch <span className='italic text-sm'>50</span></h1>
+                <h1 className='text-5xl mb-6'>
+                  Lunch <span className='italic text-sm'>50</span>
+                </h1>
               </div>
             </Reveal>
 
@@ -43,6 +52,8 @@ const Menu = () => {
             </Reveal>
           </div>
           <Reveal>
+            
+
             <div className='relative mx-auto'>
               <img
                 src={FotoBarEnDrank}

@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div
       id='About'
-      className='pt-20 relative mt-56'
+      className='pt-20 relative mt-56 p-5 md:p-0'
       style={{
         minHeight: '50vh',
         background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${BgFoto}) no-repeat center center fixed`,
@@ -14,15 +14,15 @@ const About = () => {
       }}
     >
       <RevealBottom>
-        <div className='overlay-title flex justify-center'>
+        <div className='overlay-title flex justify-center '>
           <span className=' overay-title text-TextDark text-7xl text-center'>
-            Over <br /> ons
+            Over ons
           </span>
         </div>
       </RevealBottom>
-      <div className='max-w-4xl mx-auto flex flex-col items-center pb-24 gap-24 mt-12 '>
+      <div className='max-w-4xl mx-auto flex flex-col items-center md:pb-24 md:gap-24 mt-12 '>
         <RevealBottom>
-          <div className='bg-Primary opacity-80 shadow-xl border p-6 w-3/4 mb-4 mr-72 font-light'>
+          <div className='bg-Primary text-sm md:text-base text-center md:text-start opacity-80 shadow-xl ml-14 md:ml-0 border p-6 w-3/4 mb-4 md:mr-72 font-light'>
             <p>
               Hēdonē is de oud-Griekse godin waar het hedonisme zijn naam aan te danken heeft.
               Centraal staan: genot, plezier en Bourgondisch leven. Daar weten chef Davine Croughs
@@ -36,8 +36,8 @@ const About = () => {
           </div>
         </RevealBottom>
         <RevealBottom>
-          <div className='bg-Primary opacity-80 shadow-xl border p-6 w-3/4 mb-4 ml-72 font-light'>
-            <p id='test'>
+          <div className='bg-Primary text-sm md:text-base text-center md:text-start opacity-80 shadow-xl ml-14 md:mt-0  border p-6 w-3/4 mb-4 md:ml-56 font-light'>
+            <p>
               Met Hēdonē is voor Davine de cirkel rond want in het pand waar hun restaurant komt,
               begon ze ooit haar carrière in de horeca. Nicholas licht hun beslissing voor een eigen
               zaak toe: “Het principe van een restaurant runnen, deden we al, behalve dan de
